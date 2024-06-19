@@ -1,0 +1,241 @@
+body {
+    background-color: rgb(245, 245, 245);
+    padding: 4em 0 4em 0;
+
+}
+
+/* Colors and Branding */
+
+:root {
+    --emerald: #00794c;
+    --cobalt: #004785;
+    --coolslate: #55616D;
+    --marine: #008ab3;
+    --hyperlink-marine: #007DA3;
+    --seafoam: #aae8e8;
+    --brightaqua: #00bbdd;
+    --slate-50: #828282;
+    --slate-25: #d4d7da;
+    --slate-15: #e6e7e9;
+    --slate-10: #eeeff0;
+    --slate-5: #f6f7f8;
+    --bulma-body-background-color: #ffffff;
+}
+
+.primary-color {
+    color: var(--emerald);
+}
+
+.slate-25 {
+    color: var(--slate-25);
+}
+
+.slate-50 {
+    color: var(--slate-50);
+}
+
+.breadcrumbs-style a {
+    color: var(--coolslate);
+    text-decoration: none;
+    
+}
+
+.breadcrumbs-style a:hover {
+    color: var(--cobalt);
+}
+
+.breadcrumbs-active {
+    color: var(--slate-25) !important;
+}
+
+.breadcrumb.has-arrow-separator li + li::before {
+    font-size: 12px;
+}
+/** Typography **/
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+a, span {
+    font-weight: 500;
+}
+
+p, span {
+    font-size: 14px;
+    
+}
+
+a {
+    text-decoration: underline;
+    color: #00794a;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #004785;
+}
+
+
+h1,h2,h3,h4,h5,h6, p, a {
+    font-family: 'Rig-Sans', Arial, sans-serif; 
+}
+
+h1,h2,h3,h4,h5,h6,p,span {
+    color: #333333;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+.
+
+.section-label-div a {
+   letter-spacing: 2px;
+   
+}
+
+.section-label {
+   
+}
+
+/** Containers **/
+
+.container-main {
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.table-of-contents {
+    padding: 25px 25px 75px 25px;
+}
+
+
+.section-label-div {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.section-description-div {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.section-description-div a {
+    font-weight: 700;
+}
+
+.judgements-div {
+    background-color: var(--slate-5);
+    padding: 10px 1em 5px 1em;
+    height: 250px;
+    border: 1px solid rgb(215, 215, 215);
+}
+
+.judgements-div > h2, .judgements-div label {
+    margin: .5em 0 0 0;
+}
+
+.judgements-div img {
+    width: 18px;
+}
+
+.documents-linked h3 {
+    font-size: 13px;
+}
+
+.documents-linked li, .documents-linked a {
+    font-size: 11px;
+    text-decoration: none;
+}
+
+/** Navigation **/
+#navbar {
+    background-color: #004785;
+    height:100%;
+    display: flex;
+    justify-content: left;
+    padding: 0 1em 0 1em;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+#navbar li {
+    margin: 0 10px; /* Adjust spacing between menu items as needed */
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+#navbar li a:hover {
+    background-color: #06559a;
+  
+}
+
+/** Banner **/
+.home-banner {
+   background-image: url('../img/campus-view.jpg');
+   background-size: cover;
+   background-position: 5% 55%;
+   height: 150px;
+   width: 100%;
+   margin: 0 auto;
+  
+}
+
+/** Images & Logos **/
+.main-logo {
+    width:45%;
+    padding: 1em 0 1em 2em;
+}
+
+
+
+/** Footer **/
+.footer {
+    background-color: var(--cobalt);
+    padding: 2em 0 2em 0;
+}
+
+.footer p {
+    color: white;
+    margin-bottom: 0 !important;
+    
+}
+
+.footer a {
+    color: white;
+    line-height: 0;
+
+}   
