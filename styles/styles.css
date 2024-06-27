@@ -25,6 +25,9 @@ body {
 .primary-color {
     color: var(--emerald);
 }
+.cobalt {
+    color: var(--cobalt);
+}
 
 .slate-25 {
     color: var(--slate-25);
@@ -81,15 +84,22 @@ a, span {
     font-weight: 500;
 }
 
-p, span {
+p, span, a {
+    font-size: 16px;
+    
+    
+}
+
+label {
     font-size: 14px;
+    font-weight: 600;
     
 }
 
 a {
     text-decoration: underline;
     color: #00794a;
-    font-size: 14px;
+    
 }
 
 a:hover {
@@ -101,7 +111,7 @@ h1,h2,h3,h4,h5,h6, p, a {
     font-family: 'Rig-Sans', Arial, sans-serif; 
 }
 
-h1,h2,h3,h4,h5,h6,p,span {
+h1,h2,h3,h4,h5,h6,p,span,label {
     color: #333333;
 }
 
@@ -109,7 +119,30 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 
-.
+.table-of-contents-breadcrumb {
+    margin-left: 0;
+}
+
+ul {
+    color:#333333;
+    font-size: 14px;
+    line-height: 3em;
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+ul a {
+    font-size: 14px;
+}
+
+table {
+    background-color: transparent !important;
+    color: #333333 !important;
+}
+
+table thead, th, td {
+    color: #333333 !important;
+}
 
 .section-label-div a {
    letter-spacing: 2px;
@@ -129,8 +162,8 @@ h1,h2,h3,h4,h5,h6 {
     border: 1px solid rgb(230, 230, 230);
 }
 
-.table-of-contents {
-    padding: 25px 25px 75px 25px;
+.content-container-main {
+    padding: 25px 3em 75px 3em;
 }
 
 
@@ -140,7 +173,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .section-description-div {
-    margin-left: 2em;
+    /** margin-left: 2em; **/
     margin-top: 1em;
 }
 
@@ -163,13 +196,41 @@ h1,h2,h3,h4,h5,h6 {
     width: 18px;
 }
 
+.documents-linked ul {
+    margin-left: 1em;
+    line-height: 2;
+   
+}
+
 .documents-linked h3 {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .documents-linked li, .documents-linked a {
-    font-size: 11px;
+    font-size:13px;
     text-decoration: none;
+    
+}   
+
+.governing-bios-border {
+    border-right: 1px solid gray;
+}
+
+.governing-bios h4 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.governing-bios p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/** Separators and Borders **/
+
+.hr-thin {
+    height: 1px;
+    background-color: var(--slate-15);
 }
 
 /** Navigation **/
@@ -219,6 +280,28 @@ h1,h2,h3,h4,h5,h6 {
     width:45%;
     padding: 1em 0 1em 2em;
 }
+
+/** Scroll to top Button **/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:var(--cobalt); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  #myBtn:hover {
+    background-color: var(--emerald); /* Add a dark-grey background on hover */
+  }
 
 
 

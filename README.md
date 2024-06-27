@@ -8,3 +8,13 @@ This will serve as a working notes/documentation for the project.
 - PDFs are same name as originally sent.
 - **An optimization pass will be done to minimize file size**
 
+
+## Viewing
+Please view these files in a browser. 
+
+**Recommended Browsers:**
+- Chrome
+- Firefox
+- Edge
+
+I advise against using other chromium based browsers or firefox forks for the time being.
