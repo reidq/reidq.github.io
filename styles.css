@@ -34,13 +34,13 @@ body::before {
     margin: 0 auto;
     padding: 65px;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 24px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    
+    
+    
     margin-top: 40px;
     margin-bottom: 40px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    
 }
 
 header {
@@ -49,8 +49,16 @@ header {
     position: relative;
 }
 
+.hero-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
 #logo-container {
-    max-width: 1000px;
+    max-width: 900px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -59,7 +67,7 @@ header {
     margin: 0 auto;
     position: relative;
     padding: 40px 20px 20px 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(255, 255, 255);
     border-radius: 16px;
     backdrop-filter: blur(5px);
 }
@@ -75,6 +83,24 @@ header {
     background: linear-gradient(90deg, transparent, #d32f2f, transparent);
 }
 
+#form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+#bottom-cta h4 {
+    font-size: 1rem;
+}
+
+#bottom-cta p, a {
+    font-size: 1rem;
+}
+
 .logo img {
     max-width: 300px;
     height: auto;
@@ -86,10 +112,14 @@ header {
 
 #jetspizza-logo {
     max-width: 500px;
+    height: auto;
+    object-fit: contain;
 }
 
 #tfmg-logo {
     max-width: 275px;
+    height: auto;
+    object-fit: contain;
 }
 
 #jetspizza-logo:hover, #tfmg-logo:hover {
@@ -98,14 +128,18 @@ header {
 }
 
 .hero {
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
     position: relative;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    font-weight: 500;
 }
 
 /* Typography */
@@ -119,6 +153,15 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+h4 {
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .oswald {
     font-family: 'Oswald', sans-serif;
 }
@@ -127,19 +170,36 @@ h1 {
     font-style: italic;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    
-    max-width: 800px;
-    margin: 0 auto;
-    font-weight: 500;
-}
 
 .fw-bold {
     font-weight: 800 !important;
 }
 
+.main-title {
+    line-height: 1;
+}
+
 /* Colors & Links */
+
+.default-link {
+    color: #363636;
+    text-decoration: none;
+}
+
+.default-link:hover {
+    color: #f03939;
+    transition: all ease-in-out 0.15s;
+}
+
+.blue-link {
+    color: #0899f6;
+    text-decoration: none;
+}
+
+.blue-link:hover {
+    color: #c8c8c8;
+    transition: all ease-in-out 0.15s;
+}
 
 .tfmg-link {
     color: #0899f6;
@@ -154,6 +214,10 @@ h1 {
 
 .red {
     color: #d32f2f;
+}
+
+.color-black {
+    color: black;
 }
 
 
@@ -228,12 +292,14 @@ input:focus {
 }
 
 footer {
+    background-color: white;
     text-align: center;
     margin-top: 60px;
     padding: 20px 0;
     color: #666;
     font-size: 14px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 /* Success Message Styling */
@@ -283,8 +349,75 @@ footer {
 
 /* Utility Classes */
 
+.mt-1 {
+    margin-top: 1rem !important;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
 .mt-3 {
     margin-top: 3rem !important;
+}
+
+.mt-4 {
+    margin-top: 4rem !important
+}
+
+.mt-5 {
+    margin-top: 5rem !important;
+}
+
+/* font utilities */
+
+.fs-1 {
+    font-size: 1em;
+}
+
+.fs-1-25 {
+    font-size: 1.25em;
+}
+
+.fs-1-5 {
+    font-size: 1.5em;
+}
+
+.fs-2 {
+    font-size: 2em;
+}
+
+.fs-3 {
+    font-size: 3em;
+}
+
+.fs-4 {
+    font-size: 4em;
+}
+
+.fs-5 {
+    font-size: 5em;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+.gap-25 {
+    gap: 25px;
 }
 
 @media (max-width: 480px) {
@@ -317,14 +450,9 @@ footer {
     }
 }
 
-@supports (backdrop-filter: blur(10px)) {
-    #logo-container {
-        background: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(5px);
-    }
-    
-    .hero {
-        background: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(5px);
-    }
+.flex-row img {
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
 } 
