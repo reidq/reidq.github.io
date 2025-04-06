@@ -93,12 +93,31 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+#bottom-cta {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
 #bottom-cta h4 {
     font-size: 1rem;
 }
 
 #bottom-cta p, a {
     font-size: 1rem;
+}
+
+#bottom-cta p {
+    max-width: 100%;
+    word-break: break-word;
+}
+
+#bottom-cta a {
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .logo img {
@@ -415,6 +434,11 @@ footer {
     text-transform: uppercase;
 }
 
+/* Sizing */
+
+.w-45 {
+    width: 45%;
+}
 
 .gap-25 {
     gap: 25px;
@@ -423,15 +447,42 @@ footer {
 @media (max-width: 480px) {
     .container {
         padding: 20px;
-        margin: 15px;
+        margin: 0 auto;
+        width: 100%;
     }
+    
+    .hero-titles {
+        flex-direction: column;
+    }
+
+    .m-flex-column {
+        flex-direction: column;
+    }
+
+    .m-gap-0 {
+        gap: 0 !important;
+    }
+
+    .m-w-80 {
+        width: 80%;
+    }
+
+    .m-mt-0 {
+        margin-top: 0 !important;
+    }
+
+    #form-container {
+        padding: 20px;
+    }
+
+    #bottom-cta {
+        padding: 5px !important;
+    }
+
+    #bottom-cta p,a {font-size: 0.8rem;}
     
     h1 {
         font-size: 1.8rem;
-    }
-    
-    .form-section {
-        padding: 20px;
     }
     
     .btn-submit {
@@ -455,4 +506,16 @@ footer {
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .m-flex-column {
+        flex-direction: column;
+    }
+    
+    .m-flex-column img {
+        order: -1;
+        margin-bottom: 20px;
+        align-self: center;
+    }
 } 
