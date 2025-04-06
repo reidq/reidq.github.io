@@ -544,6 +544,14 @@ footer {
     margin: 0;
 }
 
+.content-text p {
+    margin-bottom: 1rem;
+}
+
+.content-text p:last-child {
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
